@@ -7,8 +7,6 @@ app.set('port', (process.env.PORT || 5000))
 const REQUIRE_AUTH = true
 const AUTH_TOKEN = '37636629465042229962eaec864614b9'
 
-    ...
-
     if (REQUIRE_AUTH) {
     if (req.headers['auth-token'] !== AUTH_TOKEN) {
         return res.status(401).send('Unauthorized')
